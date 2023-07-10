@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: hsl(212, 45%, 89%);
+  background-color:var(--Light-gray);
   font-family: 'Outfit', sans-serif;
   font-size: 15px;
 }
@@ -19,13 +19,15 @@ body {
 main{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 5.5rem 1.2rem;
 }
 
 .card {
-  background-color: hsl(0, 0%, 100%);
+  background-color:var(--White);
   border-radius: 15px;
-  width: 18rem;
+  max-width: 18rem;
   padding: 1rem;
   text-align: center;
 }
@@ -38,14 +40,14 @@ main{
 h2 {
   font-size: 1.4rem;
   font-weight: 700;
-  margin: 1.2rem 1rem;
+  margin: 1.2rem 1rem 1rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 400;
-  margin: 0.8125rem 0.625rem 1.125rem;
-  color: ;
+  margin: 1rem 0.7rem 1.5rem;
+  color:var(--Grayish-blue);
 }
 
 .attribution {
@@ -61,14 +63,4 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 768px) {
-  
-  body {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
 }
